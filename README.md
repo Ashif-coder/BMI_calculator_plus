@@ -43,9 +43,3 @@ Here's an overview of the project's folder structure:
    ```
 
 6. **Contribute**: If you'd like to contribute to the project, feel free to submit pull requests and help make this BMI calculator even better.
-
-## Further Information
-
-For more details about the project, including any API-related functionality, please refer to the project's [GitHub repository](https://github.com/Ashif-coder/BMI_calculator_plus/tree/main/Bmi).
-
-Thank you for your interest in the BMI Calculator project. We hope it can be a valuable resource for promoting healthier choices and lifestyle changes. If you have any questions or need assistance, please don't hesitate to reach out to the project maintainers.
