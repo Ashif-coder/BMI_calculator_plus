@@ -34,7 +34,7 @@ class ResultPage extends StatelessWidget {
               alignment: Alignment.bottomLeft,
               child: Text(
                 'Your Result',
-                style: getBoldStyle(color: Colors.white,fontSize: FontSize.s50),
+                style: getBoldStyle(color: Colors.white,fontSize: FontSize.s40),
               ),
             ),
           ),
@@ -53,11 +53,11 @@ class ResultPage extends StatelessWidget {
                     ),
                     Text(
                       bmiResult,
-                      style: getRegularStyle(color: Colors.white,fontSize: FontSize.s100),
+                      style: getRegularStyle(color: Colors.white,fontSize: FontSize.s70),
                     ),
                     Text(
                       interpretation,
-                      style: getRegularStyle(color: Colors.white,fontSize: FontSize.s22),
+                      style: getRegularStyle(color: Colors.white,fontSize: FontSize.s18),
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(
@@ -67,7 +67,7 @@ class ResultPage extends StatelessWidget {
                       onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (context) => ConditionWebViewScreen(url: bmiLinks,title: "BMI Result Web view",isHTML: false,))),
                       child: Text(
                         "Know More About your BMI result",
-                        style: getRegularStyle(color: ColorManager.kLinkColor),
+                        style: getRegularStyle(color: ColorManager.kLinkColor,fontSize: FontSize.s16),
                         textAlign: TextAlign.center,
                       ),
                     ),

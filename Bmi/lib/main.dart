@@ -3,6 +3,7 @@ import 'package:bmi/provider/providers.dart';
 import 'package:bmi/screens/home_screen/input_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 final GlobalKey<ScaffoldMessengerState> snackbarKey = GlobalKey<ScaffoldMessengerState>();
 
@@ -18,14 +19,19 @@ class BMICalculator extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: providers,
-      child: MaterialApp(
-        theme: ThemeData.dark().copyWith(
-          primaryColor:ColorManager.kPrimaryColor,
-          scaffoldBackgroundColor: ColorManager.kScaffoldColor,
+      child: ScreenUtilInit(
+        designSize: const Size(360, 844),
+        minTextAdapt: true,
+        splitScreenMode: true,
+        child: MaterialApp(
+            theme: ThemeData.dark().copyWith(
+              primaryColor:ColorManager.kPrimaryColor,
+              scaffoldBackgroundColor: ColorManager.kScaffoldColor,
+            ),
+            home: InputPage(),
+            debugShowCheckedModeBanner:false
         ),
-        home: InputPage(),
-          debugShowCheckedModeBanner:false
-      ),
+      )
     );
   }
 }
